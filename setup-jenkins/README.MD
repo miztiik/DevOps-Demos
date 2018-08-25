@@ -78,4 +78,4 @@ http://YOUR-SERVER-PUBLIC-IP:8080
 1. Check "console output"
 
 ### Next Step
-[ ] Setup Jenkins to run inside Tomcat Server
+- [ ] Setup Jenkins to run inside Tomcat Server
