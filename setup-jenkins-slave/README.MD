@@ -54,5 +54,4 @@ Configure the node as shown here
 1. Build job
 1. Check "console output"
 
-### Next Step
-- [ ] Setup Jenkins to run inside Tomcat Server
+
