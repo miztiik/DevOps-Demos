@@ -43,7 +43,7 @@ chmod 700 known_hosts
 #### Configure the Slave using `Manage Jenkins`
 Configure the node as shown here
 `Manage Jenkins` > `Manage Nodes` > `New Node`
-![Jenkins Master and Slave Configuration](https://raw.githubusercontent.com/miztiik/DevOps-Demos/master/setup-jenkins-slave/images/Slave-Node-Configuration-01)
+![Jenkins Master and Slave Configuration](https://raw.githubusercontent.com/miztiik/DevOps-Demos/master/setup-jenkins-slave/images/Slave-Node-Configuration-01.png)
 ### Test Jenkins Jobs
 1. Create “new item”
 1. Enter an item name – `My-First-Project`
