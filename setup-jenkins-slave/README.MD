@@ -48,6 +48,9 @@ Configure the node as shown here
 1. Create “new item”
 1. Enter an item name – `My-First-Project`
    - Chose `Freestyle` project
+1. Under `General` Section
+   - Choose `Restrict where this project can be run`
+     - Update your _jenkins slave label_ `Java` 
 1. Under Build section
 	Execute shell
   ```sh
