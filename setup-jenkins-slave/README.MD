@@ -30,35 +30,20 @@ chmod 700 authorized_keys
 ```
 
 ### Configuration on Master
+Copy the slave node's public key[`id_rsa.pub`] to Master Node's `known_hosts` file
 ```sh
 mkdir -p /var/lib/jenkins/.ssh
 cd /var/lib/jenkins/.ssh
-touch known_hosts
+ssh-keyscan -H SLAVE-NODE-IP-OR-HOSTNAME >>/var/lib/jenkins/.ssh/known_hosts
+# ssh-keyscan -H 172.31.38.42 >>/var/lib/jenkins/.ssh/known_hosts
 chown jenkins:jenkins known_hosts
 chmod 700 known_hosts
-# Copy the slave node's public key[`id_rsa.pub`] to Master Node's `known_hosts` file
-echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC37ytaMlEe1z6hIPAW6xcTZ3JMYzMq1wDDNCp8l+zYVeqnBypwkCxxbp0sAVP6R974259BQskSpJd0H88yDjSdDJfmvLwjxHLVLZ1n0xF0/es11v9gfLi
-uwkD6Y9FU3dEeId3kgjsb+K21Phjyxrn2khWuVULgQS2VYU+0HECaLmNDvfz02bVe8+axXadc37Y/nwoVHHGDvEq0Sx2imGw46oo93RqpFjTsUasbJ0lwVaNl+dLqRkejRipEiVsY/yQCy6xLbwYnRDmdHE
-mb9MeUro7ZV9c+AO90cxj3PK1mVWaGplYEvoTvJsb7a7V50heBhBvdS1RrquO1xDJhSMBz jenkins-slave-01@ip-172-31-3-74.eu-central-1.compute.internal" > known_hosts
-
 ```
 
-#### Accessing Jenkins
-By default jenkins runs at port `8080`, You can access jenkins at
-```sh
-http://YOUR-SERVER-PUBLIC-IP:8080
-```
-#### Configure Jenkins
-- The default Username is `admin`
-- Grab the default password 
-  - Password Location:`/var/lib/jenkins/secrets/initialAdminPassword`
-- `Skip` Plugin Installation; _We can do it later_
-- Change admin password
-  - `Admin` > `Configure` > `Password`
-- Configure `java` path
-  - `Manage Jenkins` > `Global Tool Configuration` > `JDK`  
-- Create another admin user id
-
+#### Configure the Slave using `Manage Jenkins`
+Configure the node as shown here
+`Manage Jenkins` > `Manage Nodes` > `New Node`
+![Jenkins Master and Slave Configuration](https://raw.githubusercontent.com/miztiik/DevOps-Demos/master/setup-jenkins-slave/images/Slave-Node-Configuration-01)
 ### Test Jenkins Jobs
 1. Create “new item”
 1. Enter an item name – `My-First-Project`
