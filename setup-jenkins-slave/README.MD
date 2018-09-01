@@ -1,6 +1,8 @@
 # Install Jenkins Slaves on AWS EC2
 Jenkins is a self-contained Java-based program, ready to run out-of-the-box, with packages for Windows, Mac OS X and other Unix-like operating systems. As an extensible automation server, Jenkins can be used as a simple CI server or turned into the continuous delivery hub for any project.
 
+![Jenkins Master and Slave Configuration](https://raw.githubusercontent.com/miztiik/DevOps-Demos/master/setup-jenkins-slave/images/Jenkins%20Master%20and%20Slave%20Configuration.png)
+
 ### Prerequisites
 1. Jenkins Master Running [Get help here](https://www.youtube.com/watch?v=KDtS6BzJo3A)
 1. EC2 RHEL 7.x Instance - _for Slave Node_ [Get help here](https://www.youtube.com/watch?v=KDtS6BzJo3A)
@@ -31,12 +33,13 @@ chmod 700 authorized_keys
 
 ### Configuration on Master
 ```sh
-sudo su - jenkins
+
 mkdir -p /var/lib/jenkins/.ssh
 cd /var/lib/jenkins/.ssh
 touch known_hosts
+chown jenkins:jenkins known_hosts
 chmod 700 known_hosts
-# Copy the jenkins slave public key to the known_hosts file
+# Copy the slave node's public key[`id_rsa.pub`] to Master Node's `known_hosts` file
 echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC37ytaMlEe1z6hIPAW6xcTZ3JMYzMq1wDDNCp8l+zYVeqnBypwkCxxbp0sAVP6R974259BQskSpJd0H88yDjSdDJfmvLwjxHLVLZ1n0xF0/es11v9gfLi
 uwkD6Y9FU3dEeId3kgjsb+K21Phjyxrn2khWuVULgQS2VYU+0HECaLmNDvfz02bVe8+axXadc37Y/nwoVHHGDvEq0Sx2imGw46oo93RqpFjTsUasbJ0lwVaNl+dLqRkejRipEiVsY/yQCy6xLbwYnRDmdHE
 mb9MeUro7ZV9c+AO90cxj3PK1mVWaGplYEvoTvJsb7a7V50heBhBvdS1RrquO1xDJhSMBz jenkins-slave-01@ip-172-31-3-74.eu-central-1.compute.internal" > known_hosts
