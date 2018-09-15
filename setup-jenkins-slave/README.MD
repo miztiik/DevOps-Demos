@@ -1,6 +1,6 @@
-# Install Jenkins Slaves on AWS EC2
+# Configure Jenkins Slaves on AWS EC2
 Jenkins is a self-contained Java-based program, ready to run out-of-the-box, with packages for Windows, Mac OS X and other Unix-like operating systems. As an extensible automation server, Jenkins can be used as a simple CI server or turned into the continuous delivery hub for any project.
-
+### Follow this article in **[Youtube](https://youtu.be/hwrYURP4O2k)**
 ![Jenkins Master and Slave Configuration](https://raw.githubusercontent.com/miztiik/DevOps-Demos/master/setup-jenkins-slave/images/Jenkins%20Master%20and%20Slave%20Configuration.png)
 
 ### Prerequisites
@@ -80,4 +80,14 @@ Configure the node as shown here
 1. Build job
 1. Check "console output"
 
+### Other Videos
+[x] [Install and Configure Jenkins in AWS EC2](https://youtu.be/-0dkiteJEuE)
+
+[x] [Configure Users & Groups in Jenkins](https://youtu.be/jZOqcB32dYM)
+
+[x] [Secure your Jenkins Server](https://youtu.be/19FmJumnkDc)
+
+[x] [Jenkins Plugin Installation](https://youtu.be/p_PqPBbjaZ4)
+
+[x] [Jenkins Master-Slave Configuration](https://youtu.be/hwrYURP4O2k)
 
