@@ -4,7 +4,7 @@ Jenkins advantage is its extensibility with plugines. Its plugins number upwards
 
 ### Follow this article in **[Youtube](https://youtu.be/p_PqPBbjaZ4)**
 
-![Jenkins Plugins](https://raw.githubusercontent.com/miztiik/DevOps-Demos/master/setup-jenkins-plugins/images/jenkins-plugins.png)
+  ![Jenkins Plugins](https://raw.githubusercontent.com/miztiik/DevOps-Demos/master/setup-jenkins-plugins/images/jenkins-plugins.png)
 
 **Generic Plugins**
 -------------------
