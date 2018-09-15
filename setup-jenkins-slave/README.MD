@@ -1,10 +1,11 @@
 # Configure Jenkins Slaves on AWS EC2
 Jenkins is a self-contained Java-based program, ready to run out-of-the-box, with packages for Windows, Mac OS X and other Unix-like operating systems. As an extensible automation server, Jenkins can be used as a simple CI server or turned into the continuous delivery hub for any project.
+
 ### Follow this article in **[Youtube](https://youtu.be/hwrYURP4O2k)**
 ![Jenkins Master and Slave Configuration](https://raw.githubusercontent.com/miztiik/DevOps-Demos/master/setup-jenkins-slave/images/Jenkins%20Master%20and%20Slave%20Configuration.png)
 
 ### Prerequisites
-1. Jenkins Master Running [Get help here](https://www.youtube.com/watch?v=KDtS6BzJo3A)
+1. Jenkins Master Running [Get help here](https://youtu.be/-0dkiteJEuE)
 1. EC2 RHEL 7.x Instance - _for Slave Node_ [Get help here](https://www.youtube.com/watch?v=KDtS6BzJo3A)
    - With Internet Access
    - Security Group with Port `8080` open for internet
@@ -81,13 +82,9 @@ Configure the node as shown here
 1. Check "console output"
 
 ### Other Videos
-[x] [Install and Configure Jenkins in AWS EC2](https://youtu.be/-0dkiteJEuE)
-
-[x] [Configure Users & Groups in Jenkins](https://youtu.be/jZOqcB32dYM)
-
-[x] [Secure your Jenkins Server](https://youtu.be/19FmJumnkDc)
-
-[x] [Jenkins Plugin Installation](https://youtu.be/p_PqPBbjaZ4)
-
-[x] [Jenkins Master-Slave Configuration](https://youtu.be/hwrYURP4O2k)
+ - [x] [Install and Configure Jenkins in AWS EC2](https://youtu.be/-0dkiteJEuE)
+ - [x] [Configure Users & Groups in Jenkins](https://youtu.be/jZOqcB32dYM)
+ - [x] [Secure your Jenkins Server](https://youtu.be/19FmJumnkDc)
+ - [x] [Jenkins Plugin Installation](https://youtu.be/p_PqPBbjaZ4)
+ - [x] [Jenkins Master-Slave Configuration](https://youtu.be/hwrYURP4O2k)
 

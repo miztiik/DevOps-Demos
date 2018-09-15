@@ -2,6 +2,8 @@
 
 Jenkins advantage is its extensibility with plugines. Its plugins number upwards of over 1500. These plugins support the automation of various development tasks and were primarily developed to satisfy the need for CI and CD. The development tasks that all these plugins support include—but are not limited to—running tests, static code analysis, building projects, and deployment, among many, many other capabilities.
 
+### Follow this article in **[Youtube](https://youtu.be/p_PqPBbjaZ4)**
+
 ![Jenkins Plugins](https://raw.githubusercontent.com/miztiik/DevOps-Demos/master/setup-jenkins-plugins/images/jenkins-plugins.png)
 
 **Generic Plugins**
@@ -145,6 +147,13 @@ SCM allows for the referencing of multiple repositories in a Jenkins job.
 
 ## Conclusion
 There are hundreds of plugins that might be useful for your current project. You may think that your current CI service is adequate and does not need additional plugins, sometimes it is worthwhile to go over all plugins availableat [Jenkins’](https://jenkins.io/). You may find some more plugins thta are necessary for your project.
+
+### Other References
+ - [x] [Install and Configure Jenkins in AWS EC2](https://youtu.be/-0dkiteJEuE)
+ - [x] [Configure Users & Groups in Jenkins](https://youtu.be/jZOqcB32dYM)
+ - [x] [Secure your Jenkins Server](https://youtu.be/19FmJumnkDc)
+ - [x] [Jenkins Plugin Installation](https://youtu.be/p_PqPBbjaZ4)
+ - [x] [Jenkins Master-Slave Configuration](https://youtu.be/hwrYURP4O2k)
 
 ##### References
 1. [Jenkins plugins Gist](https://gist.github.com/jet47/f47a7e542295c238fff4)
